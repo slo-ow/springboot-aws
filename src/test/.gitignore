@@ -2,7 +2,7 @@
 ### Gradle template
 .gradle
 .idea
-#테스트
+#테스트추가
 
 # Ignore Gradle GUI config
 gradle-app.setting

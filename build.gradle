@@ -34,5 +34,6 @@ dependencies {
     implementation 'org.jetbrains:annotations:15.0'
     // https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api
     compile group: 'javax.persistence', name: 'javax.persistence-api', version: '2.2'
+    compile('org.springframework.boot:spring-boot-starter-mustache')
 
 }

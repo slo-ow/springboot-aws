@@ -41,4 +41,5 @@ dependencies {
     // jdbc 의존성 등록
     compile('org.springframework.session:spring-session-jdbc')
 
+    testCompile("org.springframework.security:spring-security-test")
 }

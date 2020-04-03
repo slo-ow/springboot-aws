@@ -14,6 +14,22 @@ cache:
 
 script: "./gradlew clean build"
 
+before_deploy:
+  - zip -r slow-springboot-webservice # 현재 위치의 모든 파일을 해당 이름으로 압축(zip) 한다.
+  - mkdir -p deploy # deploy 라는 디렉토리를 Travis CI 가 실행 중인 위치에 생성한다.
+  - mv slow-springboot-webservice.zip deploy/slow-springboot-webservice.zip # deploy로 zip파일 이동
+
+deploy:
+  - provider: s3
+    access_key_id: $AWS_ACCESS_KEY # Travis repo settings에 설정된 값
+    secret_access_key: $AWS_SECRET_KEY # Travis repo settings에 설정된 값
+    bucket: slow-springboot-build # S3 버킷
+    region: ap-northeast-2
+    skip_cleanup: true
+    acl: private # zip 파일 접근을 private으로
+    local_dir: deploy # before_deploy에서 생성한 디렉토리
+    wait-until-deployed: true
+
 before_install:
   - chmod +x gradlew
 

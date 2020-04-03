@@ -15,7 +15,7 @@ cache:
 script: "./gradlew clean build"
 
 before_deploy:
-  - zip -r slow-springboot-webservice # 현재 위치의 모든 파일을 해당 이름으로 압축(zip) 한다.
+  - zip -r slow-springboot-webservice * # 현재 위치의 모든 파일을 해당 이름으로 압축(zip) 한다.
   - mkdir -p deploy # deploy 라는 디렉토리를 Travis CI 가 실행 중인 위치에 생성한다.
   - mv slow-springboot-webservice.zip deploy/slow-springboot-webservice.zip # deploy로 zip파일 이동
 

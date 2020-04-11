@@ -9,7 +9,7 @@ cp $REPOSITORY/zip/*.jar $REPOSITORY/
 
 echo "> 현재 구동중인 애플리케이션 pid 확인"
 
-CURRENT_PID=$(pgrep -fl slow-springboot-webservice | grep jar | awk '{print $1}')  # 현재 수행 중인 스프링 부트 애플리케이션의 프로세스 ID 를 찾는다. 실행중이면 종료하기 위해서
+CURRENT_PID=$(pgrep -fl slow-springboot-webservice | grep jar | awk '{print $1}')  # 현재 수행 중인 스프링 부트 애플리케이션의 프로세스 ID 를 찾는다. 실행중이라면 종료하기 위해서
 
 echo "현재 구동중인 어플리케이션 pid: $CURRENT_PID"
 

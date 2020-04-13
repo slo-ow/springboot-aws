@@ -25,7 +25,7 @@ public class IndexController {
         model.addAttribute("posts",postsService.findAllDesc());
         // @LoginUser 를 사용하기전에 세션을 가져오던 방식 SessionUser user = (SessionUser) httpSession.getAttribute("user");
         if (user != null) {
-            model.addAttribute("user", user.getName());
+            model.addAttribute("userName", user.getName());
         }
         return "index";
         /*

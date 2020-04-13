@@ -28,6 +28,6 @@ public class LoginUserArgumentResolver implements HandlerMethodArgumentResolver 
 
     @Override // 2. 파라미터에 전달할 객체를 생성함, 여기서는 세션에서 객체를 가져온다.
     public Object resolveArgument(@NotNull MethodParameter parameter, ModelAndViewContainer mavContainer, @NotNull NativeWebRequest webRequest, WebDataBinderFactory binderFactory) throws Exception {
-        return httpSession.getAttribute("user");
+        return httpSession.getAttribute("userName");
     }
 }

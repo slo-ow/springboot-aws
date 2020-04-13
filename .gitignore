@@ -1,20 +1,11 @@
 # Created by .ignore support plugin (hsz.mobi)
 ### Gradle template
+
 .gradle
 .idea
-#테스트추가
 
-# Ignore Gradle GUI config
-gradle-app.setting
+#application-real-oauth.properties 파일 커밋 방지
+application-real-oauth.properties
 
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
-
-# Cache of project
-.gradletasknamecache
-
-# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
-# gradle/wrapper/gradle-wrapper.properties
-
-#application-oauth.properties 파일 커밋 방지
-application-oauth.properties
+build
+out

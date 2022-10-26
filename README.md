@@ -1,4 +1,4 @@
-## SpringBoot&AWS&Travis IC自動配布練習 [![Build Status](https://travis-ci.org/slo-ow/TestProject2.svg?branch=master)](https://travis-ci.org/slo-ow/TestProject2)
+## SpringBoot&AWS&Travis CI自動配布練習 [![Build Status](https://travis-ci.org/slo-ow/TestProject2.svg?branch=master)](https://travis-ci.org/slo-ow/TestProject2)
 ### 2020-06-17 開発修了
 BugやIssueの解決件に関しては以前投稿してた
 [技術ブログ](https://blog.naver.com/icet25/221913691144,"技術ブログ") 
